@@ -34,10 +34,15 @@ namespace CaleresPOCFunctionApp1
             telemetry.Context.Operation.Id = context.InvocationId.ToString();
             telemetry.Context.Operation.Name = context.FunctionName;
 
-            log.LogError($"C# Timer trigger function 1 executed at: {DateTime.Now}. Log lvl Info");
+            //generate some dummy errors on certian day of the week.
+            if (DateTime.Now.DayOfWeek == DateTime.Parse("10/09/2018").DayOfWeek)
+            {
+                log.LogCritical($"C# Timer trigger function 1 executed at: {DateTime.Now}. Log lvl Critical");
+            }
+            log.LogInformation($"C# Timer trigger function 1 executed at: {DateTime.Now}. Log lvl Information");
 
-            // Track a Metric
-            var metric = new MetricTelemetry("Test Metric", DateTime.Now.Millisecond);
+            // Track a Metric something like records process but fake it here with an int.
+            var metric = new MetricTelemetry("Test Metric", DateTime.Now.Day);
             telemetry.TrackMetric(metric);
         }
     }
