@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaleresPOCFunctionApp1", "CaleresPOCFunctionApp1\CaleresPOCFunctionApp1.csproj", "{9CEDC243-D178-487E-AD24-586A23DF31CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaleresPOCFunctionApp1Tests", "CaleresPOCFunctionApp1Tests\CaleresPOCFunctionApp1Tests.csproj", "{74AA73C7-B1CE-418E-BC05-0D2A25378383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaleresPOCFunctionApp1Tests", "CaleresPOCFunctionApp1Tests\CaleresPOCFunctionApp1Tests.csproj", "{74AA73C7-B1CE-418E-BC05-0D2A25378383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
