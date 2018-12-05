@@ -19,7 +19,7 @@ using System;
 
 namespace CaleresPOCFunctionApp1
 {
-    public static class HTTPSTriggerFunction1
+    public static class HTTPTriggerFunction1
     {
         private static string key = TelemetryConfiguration.Active.InstrumentationKey
             = System.Environment.GetEnvironmentVariable(
